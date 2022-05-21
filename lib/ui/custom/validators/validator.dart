@@ -13,7 +13,7 @@ class Validator {
 
   static String? emailValidator(String? value) {
     return value == null || value.isEmpty ? "Please enter an email address!" :
-      !value.contains("@") ? "Please enter valid email!" : null;
+      !value.contains("@gmail.com") ? "Please enter valid email!" : null;
   }
 
   static String? passwordValidator(String? value) {
@@ -25,7 +25,7 @@ class Validator {
 
   static String? confirmPasswordValidator(String? value, TextEditingController controller) {
     return value == null || value.isEmpty ? "Please enter a password second time!" :
-      value != controller.value.text ? "Passwords don't match!" : null;
+      value != controller.value.text.trim() ? "Passwords don't match!" : null;
   }
   
 }
