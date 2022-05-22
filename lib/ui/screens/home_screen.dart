@@ -14,7 +14,7 @@ class HomeScreen extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: TextConsts.loginSystemWidget,
+        title: TextConsts.loginSystem,
       ),
       backgroundColor: const Color.fromARGB(255, 36, 110, 230),
       body: SingleChildScrollView(
@@ -52,7 +52,7 @@ class HomeScreen extends StatelessWidget {
                             height: 20,
                             width: 20,
                           ),
-                          TextConsts.signUpTwitterWidget,
+                          TextConsts.signUpTwitter,
                           WidgetMethods.horizontalSpace(10)
                         ],
                       ),

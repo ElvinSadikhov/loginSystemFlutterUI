@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
 
 class TextConsts {
-  static const String name = "Name";
-  static const String email = "Email";
-  static const String password = "Password";
-  static const String confirmPassword = "Confirm password";
+
+  TextConsts._();
   
-  static const Text signUpWidget = Text(
+  static const Text signUp = Text(
                 "SIGN UP", 
                 style: TextStyle( 
                   color: Color.fromARGB(255, 14, 105, 161),
@@ -14,7 +12,7 @@ class TextConsts {
                   fontWeight: FontWeight.bold
                 ), 
               );
-  static const Text checkingWidget = Text(
+  static const Text checking = Text(
                   "Checking...",
                   style: TextStyle( 
                     color: Color.fromARGB(255, 14, 105, 161),
@@ -22,7 +20,7 @@ class TextConsts {
                     fontWeight: FontWeight.bold
                   ),
                 );
-  static const Text termsWidget = Text.rich(
+  static const Text terms = Text.rich(
                   TextSpan(
                     text: "By signing up you agree to the ",
                     style: TextStyle(
@@ -41,7 +39,7 @@ class TextConsts {
                     ]
                   )
                 );
-  static const Text signUpTwitterWidget = Text(
+  static const Text signUpTwitter = Text(
                             "Sign up with Twitter",
                             style: TextStyle(
                               fontSize: 14,
@@ -49,5 +47,5 @@ class TextConsts {
                               fontWeight: FontWeight.w400
                             ),
                           );
-  static const Text loginSystemWidget = Text("Login System");
+  static const Text loginSystem = Text("Login System");
 }
