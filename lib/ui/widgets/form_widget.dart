@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:login_system_app/consts/color_consts.dart';
 import 'package:login_system_app/consts/string_consts.dart';
 import 'package:login_system_app/consts/text_consts.dart';
-import 'package:login_system_app/ui/custom/validators/validator.dart';
+import 'package:login_system_app/utils/helpers/validator.dart';
 import 'package:login_system_app/utils/helpers/widget_methods.dart';
 
 
