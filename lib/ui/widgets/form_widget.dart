@@ -2,6 +2,7 @@
 
 import 'package:argon_buttons_flutter/argon_buttons_flutter.dart';
 import 'package:flutter/material.dart';
+import 'package:login_system_app/consts/color_consts.dart';
 import 'package:login_system_app/consts/string_consts.dart';
 import 'package:login_system_app/consts/text_consts.dart';
 import 'package:login_system_app/ui/custom/validators/validator.dart';
@@ -48,14 +49,14 @@ class _FormWidgetState extends State<FormWidget> {
                 hintStyle: TextStyle(color: this.hintColor),
                 filled: true, 
                 suffixIcon: const Icon(Icons.person), 
-                suffixIconColor: Colors.white,
-                fillColor: const Color.fromARGB(139, 66, 68, 89),
+                suffixIconColor: ColorConsts.suffixIcon,
+                fillColor: ColorConsts.textField,
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(3), 
                 ),
                 focusedBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(10),
-                  borderSide: const BorderSide(color: Color.fromARGB(255, 12, 174, 233))
+                  borderSide: const BorderSide(color: ColorConsts.fieldBorder)
                 ),  
               ),
             ),
@@ -70,14 +71,14 @@ class _FormWidgetState extends State<FormWidget> {
                 hintStyle: TextStyle(color: this.hintColor),
                 filled: true,
                 suffixIcon: const Icon(Icons.email_outlined), 
-                suffixIconColor: Colors.white,
-                fillColor: const Color.fromARGB(139, 66, 68, 89),
+                suffixIconColor: ColorConsts.suffixIcon,
+                fillColor: ColorConsts.textField,
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(3), 
                 ),
                 focusedBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(10),
-                  borderSide: const BorderSide(color: Color.fromARGB(255, 12, 174, 233))
+                  borderSide: const BorderSide(color: ColorConsts.fieldBorder)
                 ),  
               ),
             ),
@@ -93,14 +94,14 @@ class _FormWidgetState extends State<FormWidget> {
                 hintStyle: TextStyle(color: this.hintColor),
                 filled: true, 
                 suffixIcon: const Icon(Icons.lock_outline_rounded), 
-                suffixIconColor: Colors.white,
-                fillColor: const Color.fromARGB(139, 66, 68, 89),
+                suffixIconColor: ColorConsts.suffixIcon,
+                fillColor: ColorConsts.textField,
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(3), 
                 ),
                 focusedBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(10),
-                  borderSide: const BorderSide(color: Color.fromARGB(255, 12, 174, 233))
+                  borderSide: const BorderSide(color: ColorConsts.fieldBorder)
                 ),  
               ),
             ),
@@ -116,14 +117,14 @@ class _FormWidgetState extends State<FormWidget> {
                 hintStyle: TextStyle(color: this.hintColor),
                 filled: true, 
                 suffixIcon: const Icon(Icons.lock_open_outlined), 
-                suffixIconColor: Colors.white,
-                fillColor: const Color.fromARGB(139, 66, 68, 89),
+                suffixIconColor: ColorConsts.suffixIcon,
+                fillColor: ColorConsts.textField,
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(3), 
                 ),
                 focusedBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(10),
-                  borderSide: const BorderSide(color: Color.fromARGB(255, 12, 174, 233))
+                  borderSide: const BorderSide(color: ColorConsts.fieldBorder)
                 ),  
               ),
             ),
