@@ -1,4 +1,5 @@
-import 'package:flutter/material.dart'; 
+import 'package:flutter/material.dart';
+import 'package:login_system_app/consts/text_consts.dart'; 
 import 'package:login_system_app/ui/widgets/form_widget.dart';
 import 'package:login_system_app/utils/helpers/widget_methods.dart';
 
@@ -13,7 +14,7 @@ class HomeScreen extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Login System"),
+        title: TextConsts.loginSystemWidget,
       ),
       backgroundColor: const Color.fromARGB(255, 36, 110, 230),
       body: SingleChildScrollView(
@@ -51,14 +52,7 @@ class HomeScreen extends StatelessWidget {
                             height: 20,
                             width: 20,
                           ),
-                          const Text(
-                            "Sign up with Twitter",
-                            style: TextStyle(
-                              fontSize: 14,
-                              color: Colors.white,
-                              fontWeight: FontWeight.w400
-                            ),
-                          ), 
+                          TextConsts.signUpTwitterWidget,
                           WidgetMethods.horizontalSpace(10)
                         ],
                       ),

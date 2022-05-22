@@ -2,6 +2,7 @@
 
 import 'package:argon_buttons_flutter/argon_buttons_flutter.dart';
 import 'package:flutter/material.dart';
+import 'package:login_system_app/consts/text_consts.dart';
 import 'package:login_system_app/ui/custom/validators/validator.dart';
 import 'package:login_system_app/utils/helpers/widget_methods.dart';
 
@@ -42,7 +43,7 @@ class _FormWidgetState extends State<FormWidget> {
               validator: (String? value) => Validator.usernameValidator(value), 
               decoration: InputDecoration(
                 contentPadding: const EdgeInsets.symmetric(horizontal: 12, vertical: 15),
-                hintText: "Name", 
+                hintText: TextConsts.name, 
                 hintStyle: TextStyle(color: this.hintColor),
                 filled: true, 
                 suffixIcon: const Icon(Icons.person), 
@@ -64,7 +65,7 @@ class _FormWidgetState extends State<FormWidget> {
               validator: (String? value) => Validator.emailValidator(value), 
               decoration: InputDecoration(  
                 contentPadding: const EdgeInsets.symmetric(horizontal: 12, vertical: 15),
-                hintText: "Email", 
+                hintText: TextConsts.email, 
                 hintStyle: TextStyle(color: this.hintColor),
                 filled: true,
                 suffixIcon: const Icon(Icons.email_outlined), 
@@ -87,7 +88,7 @@ class _FormWidgetState extends State<FormWidget> {
               obscureText: true,
               decoration: InputDecoration(
                 contentPadding: const EdgeInsets.symmetric(horizontal: 12, vertical: 15), 
-                hintText: "Password", 
+                hintText: TextConsts.password, 
                 hintStyle: TextStyle(color: this.hintColor),
                 filled: true, 
                 suffixIcon: const Icon(Icons.lock_outline_rounded), 
@@ -110,7 +111,7 @@ class _FormWidgetState extends State<FormWidget> {
               obscureText: true,
               decoration: InputDecoration( 
                 contentPadding: const EdgeInsets.symmetric(horizontal: 12, vertical: 15),
-                hintText: "Confirm password", 
+                hintText:TextConsts.confirmPassword, 
                 hintStyle: TextStyle(color: this.hintColor),
                 filled: true, 
                 suffixIcon: const Icon(Icons.lock_open_outlined), 
@@ -141,23 +142,9 @@ class _FormWidgetState extends State<FormWidget> {
                   debugPrint("${usernameController.text.trim()}, ${emailController.text.trim()}, ${passwordController.text.trim()}, ${confirmPasswordController.text.trim()}");
                 }  
               }, 
-              child: const Text(
-                "SIGN UP", 
-                style: TextStyle( 
-                  color: Color.fromARGB(255, 14, 105, 161),
-                  fontSize: 15,
-                  fontWeight: FontWeight.bold
-                ), 
-              ),
+              child: TextConsts.signUpWidget,
               loader: (timeLeft) {
-                return const Text(
-                  "Checking...",
-                  style: TextStyle( 
-                  color: Color.fromARGB(255, 14, 105, 161),
-                  fontSize: 15,
-                  fontWeight: FontWeight.bold
-                  ),
-                );
+                return TextConsts.checkingWidget; 
               },
               borderRadius: 5,
               color: Colors.white,
@@ -192,25 +179,7 @@ class _FormWidgetState extends State<FormWidget> {
             SizedBox(
               width: sizeOfScreen.width * 0.65,
               child: const Center(
-                child: Text.rich(
-                  TextSpan(
-                    text: "By signing up you agree to the ",
-                    style: TextStyle(
-                      fontSize: 11, 
-                      color: Colors.white
-                    ),
-                    children: [
-                      TextSpan(
-                        text: "Terms & Conditions",
-                        style: TextStyle(
-                          fontSize: 11, 
-                          color: Colors.white
-                          , decoration: TextDecoration.underline
-                        ),
-                      )
-                    ]
-                  )
-                ),
+                child: TextConsts.termsWidget
               ),
             ),  
           ],
