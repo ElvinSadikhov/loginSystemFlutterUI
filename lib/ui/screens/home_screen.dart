@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:login_system_app/consts/color_consts.dart';
 import 'package:login_system_app/consts/text_consts.dart'; 
 import 'package:login_system_app/ui/widgets/form_widget.dart';
 import 'package:login_system_app/utils/helpers/widget_methods.dart';
@@ -16,7 +17,7 @@ class HomeScreen extends StatelessWidget {
       appBar: AppBar(
         title: TextConsts.loginSystem,
       ),
-      backgroundColor: const Color.fromARGB(255, 36, 110, 230),
+      backgroundColor: ColorConsts.screenBackground ,
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
         child: Column( 
@@ -28,7 +29,7 @@ class HomeScreen extends StatelessWidget {
               "lib/assets/images/title_image.png",
               height: 60,
               width: 60, 
-              color: Colors.white,
+              color: ColorConsts.white,
             ),
             WidgetMethods.verticalSpace(20),
             const FormWidget(),
@@ -39,7 +40,7 @@ class HomeScreen extends StatelessWidget {
                 borderRadius: BorderRadius.circular(5),
                 child: Container(
                   width: width,
-                   color: const Color.fromARGB(255, 22, 138, 210),
+                   color: ColorConsts.signUpTwitterBackground ,
                   child: SizedBox(
                     width: width,
                     height: 50,
