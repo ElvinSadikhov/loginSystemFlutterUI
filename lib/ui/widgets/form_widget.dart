@@ -152,31 +152,6 @@ class _FormWidgetState extends State<FormWidget> {
               color: Colors.white,
               elevation: 0, 
             ),
-            // SizedBox( 
-            //   height: 50,
-            //   width: sizeOfScreen.width * 0.65,
-            //   child: ElevatedButton(
-            //     onPressed: () { 
-            //       if (_formKey.currentState!.validate()) {
-            //         ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text("You successfully signed up!")));
-            //         debugPrint("${usernameController.text.trim()}, ${emailController.text.trim()}, ${passwordController.text.trim()}, ${confirmPasswordController.text.trim()}"); 
-            //       } 
-            //     },
-            //     style: ElevatedButton.styleFrom(
-            //       primary: Colors.white
-            //     ), 
-            //     child: const Center(
-            //       child: Text(
-            //         "SIGN UP", 
-            //         style: TextStyle( 
-            //           color: Color.fromARGB(255, 14, 105, 161),
-            //           fontSize: 15,
-            //           fontWeight: FontWeight.bold
-            //         ), 
-            //       ),
-            //     ),
-            //   ),
-            // ),
             WidgetMethods.verticalSpace(5),
             SizedBox(
               width: sizeOfScreen.width * 0.65,
